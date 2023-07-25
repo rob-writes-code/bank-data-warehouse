@@ -1,0 +1,12 @@
+config-version: 2
+version: '1.5.3'
+name: 'maker_warehouse'
+profile: 'maker_warehouse'
+
+source-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets:
+    - "target"
+    - "dbt_modules"
