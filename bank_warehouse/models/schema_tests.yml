@@ -1,0 +1,27 @@
+version: 2
+
+models:
+- name: customers
+  columns:
+    - name: customerid
+      tests:
+        - not_null
+        - unique
+        - relationships:
+            to: ref('accounts')
+            field: customerid
+
+- name: accounts
+  columns:
+    - name: cardtype 
+      tests:
+        - not_null
+        - accepted_values:
+            values: ['DIAMOND', 'GOLD', 'SILVER', 'PLATINUM']
+    - name: customerid
+      tests:
+        - unique
+        - not_null
+        - relationships:
+            to: ref('customers')
+            field: customerid
