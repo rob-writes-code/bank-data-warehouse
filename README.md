@@ -10,3 +10,7 @@ Overview of the project available [here](https://github.com/rob-writes-code/bank
 
 A screenshot of the completed dashboard can be seen below:
 ![metrics_dashboard](/notebooks/screenshots/bank_dashboard2.png)
+
+<hr>
+
+This project is licensed under MIT.
